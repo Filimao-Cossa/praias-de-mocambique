@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f8ff;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+body {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #0077b6;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+select {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#toggle-theme {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#toggle-theme img {
+  width: 32px;
+  height: 32px;
+}
+#toggle-theme {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+#theme-icon {
+  font-size: 1.2rem;
+}
+
+body.dark-mode #toggle-theme:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode #theme-icon {
+  filter: invert(100%);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 1rem;
+  width: 280px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0077b6;
+  color: white;
+}
+
+/* 🌙 Modo Escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+header.dark-mode, footer.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.card.dark-mode {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
