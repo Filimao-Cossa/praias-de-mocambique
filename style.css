@@ -422,4 +422,23 @@ main {
 html, body {
   overflow-x: hidden;
 }
+/* Imagens padrão: ocupam 100% do container */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Para telas maiores (tablet paisagem e desktop) */
+@media (min-width: 768px) {
+  img {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+.imagem {
+  width: 100%;
+  text-align: center;
+}
 
