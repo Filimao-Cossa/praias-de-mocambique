@@ -257,13 +257,13 @@ footer {
 .dark-mode .btn-voltar:hover {
   background-color: #555;
 }
-body {
+/*body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
   color: #333;
   margin: 0;
   padding: 0;
-}
+}*/
 
 header {
   background-color: #0077b6;
@@ -328,11 +328,11 @@ h2 {
   font-size: 1rem;
 }
 
-.botoes-extra {
+/*.botoes-extra {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-}
+}*/
 .botoes-extra a {
   background-color: #0096c7;
   color: white;
@@ -346,11 +346,11 @@ h2 {
   background-color: #0077b6;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .detalhes-container {
     grid-template-columns: 1fr;
   }
-}
+}*/
 .btn-favoritar {
   background-color: #ffb703;
   color: #000;
@@ -385,3 +385,41 @@ h2 {
 .btn-whatsapp:hover {
   background-color: #128C7E;
 }
+/*img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .detalhes-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .botoes-extra {
+    flex-direction: column;
+  }
+}
+body {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+main {
+  padding: 1rem;
+}
+.botoes-extra a {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+html, body {
+  overflow-x: hidden;
+}
+
