@@ -1,0 +1,28 @@
+{
+  "short_name": "Moçambique",
+  "name": "Praias de Moçambique 🏝️",
+  "description": "Descubra as melhores praias de Moçambique",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#e0f7fa",
+  "theme_color": "#0077b6",
+  "scope": "/website/praias-de-mocambique/",
+  "icons": [
+    {
+      "src": "/img/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/icons/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
+

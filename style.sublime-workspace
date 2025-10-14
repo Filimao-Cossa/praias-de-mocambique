@@ -1,0 +1,220 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"tog",
+				"View: Toggle Menu"
+			],
+			[
+				"",
+				"Set Syntax: Markdown (Go)"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/cv-projecto/index.html",
+		"/C/xampp/htdocs/cv-projecto/formulario.html",
+		"/C/xampp/htdocs/cv-projecto/resultado.html",
+		"/C/xampp/htdocs/cv-projecto/script.js",
+		"/C/xampp/htdocs/cv-projecto/style.css",
+		"/C/xampp/htdocs/exerciciosPHP/Filimao.php",
+		"/C/xampp/htdocs/exerciciosPHP/index.html",
+		"/C/xampp/htdocs/exerciciosPHP/style.css",
+		"/C/xampp/htdocs/exerciciosPHP/ex1.php",
+		"/C/xampp/htdocs/exerciciosPHP/ex2.php",
+		"/C/xampp/htdocs/exerciciosPHP/ex3.php",
+		"/C/xampp/htdocs/exerciciosPHP/ex4.php",
+		"/C/xampp/htdocs/exerciciosPHP/ex5.php",
+		"/C/xampp/htdocs/exerciciosPHP/ex6.php",
+		"/C/xampp/htdocs/exerciciosPHP/ex7.php",
+		"/C/xampp/htdocs/exerciciosPHP/ex8.php",
+		"/C/xampp/htdocs/website/script.js",
+		"/C/xampp/htdocs/website/style.css",
+		"/C/xampp/htdocs/website/index.html",
+		"/C/xampp/htdocs/cv-projecto/Resultado do CV.pdf",
+		"/C/xampp/htdocs/Actividade II (Formulário HTML, CSS & JS)/script.js",
+		"/C/xampp/htdocs/Actividade II (Formulário HTML, CSS & JS)/style.css",
+		"/C/xampp/htdocs/Actividade II (Formulário HTML, CSS & JS)/resultado.html",
+		"/C/xampp/htdocs/Actividade II (Formulário HTML, CSS & JS)/formulario.html",
+		"/C/xampp/htdocs/cv-projeto/index.html",
+		"/C/xampp/htdocs/Actividade II (Formulário HTML, CSS & JS)/styles.css",
+		"/C/xampp/htdocs/Actividade II (Formulário HTML, CSS & JS)/index.html",
+		"/D/DESCKTOP/PLATAFORMA/Plataforma 2022/Semestre II 2022/Modelação e Simulação/Filimao_Cossa/style.css",
+		"/D/DESCKTOP/PLATAFORMA/Plataforma 2022/Semestre II 2022/Modelação e Simulação/Filimao_Cossa/index.html",
+		"/C/xampp/htdocs/Actividade II (Formulário HTML, CSS & JS)/Filimao_Angelo.jpg",
+		"/D/DESCKTOP/PLATAFORMA/Plataforma 2024/SEMESTRE II/Modelação e Simulação/Actividade II (Formulário HTML, CSS & JS)/script.js",
+		"/D/DESCKTOP/PLATAFORMA/Plataforma 2024/SEMESTRE II/Modelação e Simulação/Actividade II (Formulário HTML, CSS & JS)/index.html",
+		"/D/DESCKTOP/PLATAFORMA/Plataforma 2024/SEMESTRE II/Modelação e Simulação/Actividade II (Formulário HTML, CSS & JS)/styles.css",
+		"/C/Users/Filimao Angelo Cossa/Desktop/aula.html",
+		"/C/Users/Filimao Angelo Cossa/Desktop/3024_Night.tmTheme"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 100.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 28.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "style.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 223.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

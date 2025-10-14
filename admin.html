@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Administrativo</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header>
+    <h1>Painel de Gestão de Praias</h1>
+  </header>
+
+  <main>
+    <form id="form-praia">
+      <fieldset>
+        <legend>Informações da Praia</legend>
+
+        <label>ID único:</label>
+        <input type="text" id="id" required>
+
+        <label>Nome:</label>
+        <input type="text" id="nome" required>
+
+        <label>Província:</label>
+        <select id="provincia" required>
+          <option value="">Selecionar</option>
+          <option>Maputo</option>
+          <option>Inhambane</option>
+          <option>Gaza</option>
+          <option>Zambézia</option>
+          <option>Cabo Delgado</option>
+          <option>Nampula</option>
+        </select>
+
+        <label>Localização:</label>
+        <input type="text" id="localizacao">
+
+        <label>Descrição:</label>
+        <textarea id="descricao"></textarea>
+
+        <label>Melhor época:</label>
+        <input type="text" id="epoca">
+
+        <label>Atividades (separadas por vírgula):</label>
+        <input type="text" id="atividades">
+
+        <label>Infraestrutura:</label>
+        <textarea id="infraestrutura"></textarea>
+
+        <label>Imagem principal:</label>
+        <input type="text" id="imagem">
+        <img id="preview-principal" src="" alt="Preview" style="max-width: 200px; margin-top: 5px;">
+
+        <label>Imagens adicionais (separadas por vírgula):</label>
+        <input type="text" id="imagensAdicionais">
+
+        <label>Link oficial:</label>
+        <input type="url" id="link">
+
+        <label>Mapa (Google Maps):</label>
+        <input type="url" id="mapa">
+
+        <label>Curiosidades:</label>
+        <textarea id="curiosidades"></textarea>
+
+        <label>Segurança:</label>
+        <textarea id="seguranca"></textarea>
+
+        <button type="submit">Salvar Praia</button>
+      </fieldset>
+    </form>
+
+    <section id="output-json">
+      <h2>JSON Gerado</h2>
+      <pre id="json-display"></pre>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
