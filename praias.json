@@ -149,7 +149,7 @@
     "curiosidades": "Ideal para quem busca paz e sossego.",
     "seguranca": "Leve suprimentos, pois é isolada."
     },
-    {
+        {
     "id": "praia-de-bazaruto",
     "nome": "Praia de Bazaruto",
     "provincia": "Inhambane",
@@ -178,5 +178,6 @@
     "mapa": "https://www.google.com/maps?q=Praia+de+Santa+Maria",
     "curiosidades": "Recifes de coral intactos e trilhas costeiras.",
     "seguranca": "Evite uso de flashes para proteger a fauna marinha."
-  }
-]    
+ 
+}
+]

@@ -1,73 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Detalhes da Praia</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Detalhes da Praia</h1>
-    <a href="index.html" class="btn-voltar">
-  ← Voltar à lista
-</a>
-
+    <button id="toggle-theme">🌙 Modo Escuro</button>
   </header>
 
-  <main id="conteudo"></main>
-  
+  <nav>🏠 <a href="index.html">Início</a> › Detalhes</nav>
+  <a href="index.html" class="btn-voltar">← Voltar</a>
+
+  <main class="praia-detalhes">
+    <h2 id="praia-nome">Nome da Praia</h2>
+    <p><strong>📍 Província:</strong> <span id="praia-provincia">—</span></p>
+    <p><strong>🗺️ Localização:</strong> <span id="praia-localizacao">—</span></p>
+    <p><strong>📏 Distância da cidade:</strong> <span id="praia-distancia">—</span></p>
+    <p><strong>🌡️ Clima:</strong> <span id="praia-clima">—</span></p>
+    <p><strong>⭐ Classificação:</strong> <span id="praia-classificacao">—</span></p>
+    <p><strong>👥 Público ideal:</strong> <span id="praia-publico">—</span></p>
+    <p><strong>🗣️ Idioma local:</strong> <span id="praia-idioma">—</span></p>
+
+    <h3>📝 Descrição</h3>
+    <p id="praia-descricao">—</p>
+
+    <h3>📅 Melhor época</h3>
+    <p id="praia-epoca">—</p>
+
+    <h3>🎯 Atividades</h3>
+    <p id="praia-atividades">—</p>
+
+    <h3>🏗️ Infraestrutura</h3>
+    <p id="praia-infraestrutura">—</p>
+
+    <h3>🔍 Curiosidades</h3>
+    <p id="praia-curiosidades">—</p>
+
+    <h3>🛡️ Segurança</h3>
+    <p id="praia-seguranca">—</p>
+
+    <h3>🛎️ Serviços</h3>
+    <p id="praia-servicos">—</p>
+
+    <h3>🌐 Fonte oficial</h3>
+    <p id="praia-fonte">—</p>
+
+    <div class="botoes-extra">
+      <a id="btn-mapa" class="btn-link" target="_blank">📍 Ver no Google Maps</a>
+    </div>
+  </main>
 
   <footer>
-    <p>© 2025 Filimão Ângelo Cossa | Desenvolvido com HTML, CSS e JavaScript</p>
+    © 2025 Filimão Ângelo Cossa | Detalhes da Praia
   </footer>
 
-  <script>
-    const params = new URLSearchParams(window.location.search);
-    const praiaId = params.get("id");
-
-    if (!praiaId || praiaId === "undefined") {
-      document.getElementById("conteudo").innerHTML = `
-        <h2>Praia NÃO encontrada.</h2>
-        <a href="index.html">← Voltar</a>
-      `;
-      throw new Error("ID inválido ou ausente");
-    }
-
-    fetch("praias.json")
-      .then(res => res.json())
-      .then(praias => {
-        const praia = praias.find(p => p.id === praiaId);
-        if (!praia) {
-          document.getElementById("conteudo").innerHTML = `
-            <h2>Praia não encontrada.</h2>
-            <a href="index.html">← Voltar</a>
-          `;
-          return;
-        }
-
-        document.getElementById("conteudo").innerHTML = `
-          <section class="praia-detalhes" data-provincia="${praia.provincia}">
-            <!<img src="${praia.imagem}" alt="${praia.nome}">
-            <h2>${praia.nome}</h2>
-            <h3>📍 Localização</h3><p>${praia.localizacao}</p>
-            <h3>🌅 Descrição</h3><p>${praia.descricao}</p>
-            <h3>🕒 Melhor época</h3><p>${praia.epoca}</p>
-            <h3>🎯 Atividades</h3><ul>${praia.atividades.map(a => `<li>${a}</li>`).join("")}</ul>
-            <h3>🏨 Infraestrutura</h3><p>${praia.infraestrutura}</p>
-            <h3>📌 Curiosidades</h3><p>${praia.curiosidades}</p>
-            <h3>⚠️ Segurança</h3><p>${praia.seguranca}</p>
-            <h3>🔗 Links úteis</h3>
-            <ul>
-              <li><a href="${praia.link}" target="_blank">Site oficial</a></li>
-              <li><a href="${praia.mapa}" target="_blank">Ver no Google Maps</a></li>
-            </ul>
-          </section>
-        `;
-      });
-  </script>
+  <script src="detalhes.js"></script>
 </body>
 </html>
-
-
-
-

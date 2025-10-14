@@ -1,80 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Painel Administrativo</title>
-  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="admin.css" />
 </head>
 <body>
   <header>
-    <h1>Painel de Gestão de Praias</h1>
+    <h1>🛠️ Painel de Gestão de Praias</h1>
+    <a href="index.html" class="btn-voltar">← Voltar ao site</a>
   </header>
 
   <main>
+    <button id="btn-aplicar-links">🔗 Aplicar links padrão a todas as praias</button>
+   <pre id="praia-json"></pre>
+
     <form id="form-praia">
-      <fieldset>
-        <legend>Informações da Praia</legend>
+      <label>ID único:</label>
+      <input type="text" name="id" required />
 
-        <label>ID único:</label>
-        <input type="text" id="id" required>
+      <label>Nome:</label>
+      <input type="text" name="nome" required />
 
-        <label>Nome:</label>
-        <input type="text" id="nome" required>
+      <label>Província:</label>
+      <select name="provincia">
+        <option value="maputo">Maputo</option>
+        <option value="gaza">Gaza</option>
+        <option value="inhambane">Inhambane</option>
+        <option value="zambezia">Zambézia</option>
+        <option value="nampula">Nampula</option>
+        <option value="cabo-delgado">Cabo Delgado</option>
+      </select>
 
-        <label>Província:</label>
-        <select id="provincia" required>
-          <option value="">Selecionar</option>
-          <option>Maputo</option>
-          <option>Inhambane</option>
-          <option>Gaza</option>
-          <option>Zambézia</option>
-          <option>Cabo Delgado</option>
-          <option>Nampula</option>
-        </select>
+      <label>Localização:</label>
+      <input type="text" name="localizacao" />
 
-        <label>Localização:</label>
-        <input type="text" id="localizacao">
+      <label>Distância da cidade:</label>
+      <input type="text" name="distancia" />
 
-        <label>Descrição:</label>
-        <textarea id="descricao"></textarea>
+      <label>Clima:</label>
+      <input type="text" name="clima" />
 
-        <label>Melhor época:</label>
-        <input type="text" id="epoca">
+      <label>Classificação:</label>
+      <input type="text" name="classificacao" />
 
-        <label>Atividades (separadas por vírgula):</label>
-        <input type="text" id="atividades">
+      <label>Público ideal:</label>
+      <input type="text" name="publico" />
 
-        <label>Infraestrutura:</label>
-        <textarea id="infraestrutura"></textarea>
+      <label>Idioma local:</label>
+      <input type="text" name="idioma" />
 
-        <label>Imagem principal:</label>
-        <input type="text" id="imagem">
-        <img id="preview-principal" src="" alt="Preview" style="max-width: 200px; margin-top: 5px;">
+      <label>Descrição:</label>
+      <textarea name="descricao"></textarea>
 
-        <label>Imagens adicionais (separadas por vírgula):</label>
-        <input type="text" id="imagensAdicionais">
+      <label>Melhor época:</label>
+      <input type="text" name="epoca" />
 
-        <label>Link oficial:</label>
-        <input type="url" id="link">
+      <label>Atividades (separadas por vírgula):</label>
+      <input type="text" name="atividades" />
 
-        <label>Mapa (Google Maps):</label>
-        <input type="url" id="mapa">
+      <label>Infraestrutura:</label>
+      <input type="text" name="infraestrutura" />
 
-        <label>Curiosidades:</label>
-        <textarea id="curiosidades"></textarea>
+      <label>Curiosidades:</label>
+      <textarea name="curiosidades"></textarea>
 
-        <label>Segurança:</label>
-        <textarea id="seguranca"></textarea>
+      <label>Segurança:</label>
+      <textarea name="seguranca"></textarea>
 
-        <button type="submit">Salvar Praia</button>
-      </fieldset>
+      <label>Serviços (separados por vírgula):</label>
+      <input type="text" name="servicos" />
+
+      <label>Fonte oficial:</label>
+      <input type="url" name="fonte" />
+
+      <label>Link do Google Maps:</label>
+      <input type="url" name="mapa" />
+
+      <label>Link de compartilhamento:</label>
+      <input type="url" name="compartilhar" />
+
+      <button type="submit">💾 Salvar Praia</button>
+      <button id="btn-aplicar-santa-maria">📦 Aplicar modelo da Praia de Santa Maria</button>
+<pre id="praia-json"></pre>
+
     </form>
 
-    <section id="output-json">
-      <h2>JSON Gerado</h2>
-      <pre id="json-display"></pre>
+    <section id="json-output">
+      <h2>📦 JSON Gerado</h2>
+      <pre id="praia-json"></pre>
     </section>
   </main>
+
+  <footer>
+    © 2025 Filimão Ângelo Cossa | Painel Administrativo
+  </footer>
 
   <script src="admin.js"></script>
 </body>
