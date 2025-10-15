@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-
 {
   "name": "Praias de Moçambique",
   "short_name": "Praias",
@@ -24,5 +22,4 @@
   "lang": "pt",
   "scope": "/website/praias-de-mocambique/",
   "prefer_related_applications": false
->>>>>>> Stashed changes
 }
