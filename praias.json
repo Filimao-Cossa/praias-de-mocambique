@@ -176,21 +176,7 @@
   "fonte": "https://www.visitmozambique.net/inhaca"
 },
   {
-    "id": "praia-de-xai-xai",
-    "nome": "Praia de Xai-Xai",
-    "provincia": "Gaza",
-    "localizacao": "Cidade de Xai-Xai",
-    "descricao": "Praia com piscinas naturais formadas por recifes.",
-    "epoca": "Outubro a Fevereiro",
-    "atividades": ["Banhos", "Caminhadas", "Pesca"],
-    "infraestrutura": "Hotéis, mercado local, estrada nacional",
-    "imagem": "images/xaixai.jpeg",
-    "link": "https://www.visitmozambique.net/xaixai",
-    "mapa": "https://www.google.com/maps?q=Praia+de+Xai-Xai",
-    "curiosidades": "Piscinas naturais entre os recifes.",
-    "seguranca": "Cuidado com as marés."
-  },
-  {
+    
   "id": "praia-de-chocas-mar",
   "nome": "Praia de Chocas-Mar",
   "provincia": "nampula",

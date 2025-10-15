@@ -4,105 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Painel Administrativo</title>
+
+  <!-- Estilos locais -->
   <link rel="stylesheet" href="admin.css" />
-  <link href="bootstrap.min.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet"> <!-- este é o que contém o trecho que te dei -->
-  <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" /> <!-- este é o que contém o trecho que te dei -->
+
+  <!-- Bootstrap CDN (opcional, se quiser garantir atualização) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Scripts do Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-</head>
 <body>
-  <header>
-    <h1>🛠️ Painel de Gestão de Praias</h1>
-    <a href="index.html" class="btn-voltar">← Voltar ao site</a>
-  </header>
+  <!-- Conteúdo do painel -->
+  <div class="container mt-4">
+    <h1 class="text-light">Painel Administrativo</h1>
+    <div id="lista-praias"></div>
+  </div>
 
-  <main>
-    <button id="btn-aplicar-links">🔗 Aplicar links padrão a todas as praias</button>
-   <pre id="praia-json"></pre>
-
-    <form id="form-praia">
-      <label>ID único:</label>
-      <input type="text" name="id" required />
-
-      <label>Nome:</label>
-      <input type="text" name="nome" required />
-
-      <label>Província:</label>
-      <select name="provincia">
-        <option value="maputo">Maputo</option>
-        <option value="gaza">Gaza</option>
-        <option value="inhambane">Inhambane</option>
-        <option value="zambezia">Zambézia</option>
-        <option value="nampula">Nampula</option>
-        <option value="cabo-delgado">Cabo Delgado</option>
-      </select>
-
-      <label>Localização:</label>
-      <input type="text" name="localizacao" />
-
-      <label>Distância da cidade:</label>
-      <input type="text" name="distancia" />
-
-      <label>Clima:</label>
-      <input type="text" name="clima" />
-
-      <label>Classificação:</label>
-      <input type="text" name="classificacao" />
-
-      <label>Público ideal:</label>
-      <input type="text" name="publico" />
-
-      <label>Idioma local:</label>
-      <input type="text" name="idioma" />
-
-      <label>Descrição:</label>
-      <textarea name="descricao"></textarea>
-
-      <label>Melhor época:</label>
-      <input type="text" name="epoca" />
-
-      <label>Atividades (separadas por vírgula):</label>
-      <input type="text" name="atividades" />
-
-      <label>Infraestrutura:</label>
-      <input type="text" name="infraestrutura" />
-
-      <label>Curiosidades:</label>
-      <textarea name="curiosidades"></textarea>
-
-      <label>Segurança:</label>
-      <textarea name="seguranca"></textarea>
-
-      <label>Serviços (separados por vírgula):</label>
-      <input type="text" name="servicos" />
-
-      <label>Fonte oficial:</label>
-      <input type="url" name="fonte" />
-
-      <label>Link do Google Maps:</label>
-      <input type="url" name="mapa" />
-
-      <label>Link de compartilhamento:</label>
-      <input type="url" name="compartilhar" />
-
-      <button type="submit">💾 Salvar Praia</button>
-      <button id="btn-aplicar-santa-maria">📦 Aplicar modelo da Praia de Santa Maria</button>
-<pre id="praia-json"></pre>
-
-    </form>
-
-    <section id="json-output">
-      <h2>📦 JSON Gerado</h2>
-      <pre id="praia-json"></pre>
-    </section>
-  </main>
-
-  <footer>
-    © 2025 Filimão Ângelo Cossa | Painel Administrativo
-  </footer>
-
-  <script src="admin.js"></script>
+  <!-- Script principal -->
+  <script src="js/admin.js"></script>
 </body>
 </html>
