@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* 🔄 Reset */
 * {
   margin: 0;
@@ -427,3 +428,434 @@ body {
   background: var(--accent);
   color: white;
 }
+=======
+/* 🔄 Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🎯 Base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+a {
+  color: #0077b6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* 🧭 Cabeçalho */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #0077b6;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+header h1 {
+  font-size: 1.6rem;
+}
+
+/* 🎛️ Filtros */
+.filtros {
+  background: #e0f7fa;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/* 🌙 Botão de tema */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#toggle-theme {
+  background: #023e8a;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#toggle-theme:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+#theme-icon {
+  font-size: 1.4rem;
+  filter: invert(0);
+}
+
+/* 🧱 Cards */
+#praias-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 0.5rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+.card h3 {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* 📄 Página de detalhes */
+.praia-detalhes {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.praia-detalhes img {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+.praia-detalhes h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.praia-detalhes h3 {
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+}
+.praia-detalhes ul {
+  padding-left: 1.2rem;
+}
+.praia-detalhes a {
+  color: #0077b6;
+}
+
+/* 🖼️ Miniaturas */
+.galeria-miniaturas {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+.miniatura {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.miniatura:hover {
+  transform: scale(1.05);
+}
+
+/* 🛠️ Painel administrativo */
+form {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #005f8e;
+}
+#preview-principal {
+  margin-top: 0.5rem;
+  max-width: 120px;
+  border-radius: 6px;
+}
+
+/* 🧭 Rodapé */
+footer {
+  background: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* 🌙 Modo escuro */
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+.dark-mode header,
+.dark-mode footer {
+  background: #333;
+}
+.dark-mode .card,
+.dark-mode .praia-detalhes,
+.dark-mode form {
+  background: #1e1e1e;
+}
+.dark-mode a {
+  color: #90e0ef;
+}
+.dark-mode #theme-icon {
+  filter: invert(100%);
+}
+
+/* ✨ Animação */
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* 📱 Responsivo */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .filtros {
+    flex-direction: column;
+  }
+}
+nav {
+  padding: 0.5rem 2rem;
+  font-size: 0.9rem;
+  background: #f0f0f0;
+}
+nav a {
+  color: #0077b6;
+}
+nav span {
+  color: #555;
+}
+
+.galeria-miniaturas {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.miniatura {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.miniatura:hover {
+  transform: scale(1.05);
+}
+.praia-detalhes {
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.praia-detalhes h2 {
+  font-size: 1.8rem;
+  color: #0077b6;
+  margin-bottom: 1rem;
+}
+
+.praia-detalhes h3 {
+  margin-top: 1.5rem;
+  color: #023e8a;
+}
+
+.botoes-extra {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-link {
+  background: #0077b6;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-link:hover {
+  background: #005f8e;
+}
+.praia-detalhes {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+}
+
+.praia-detalhes h2 {
+  font-size: 2rem;
+  color: #0077b6;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.praia-detalhes p {
+  margin: 0.5rem 0;
+}
+
+.praia-detalhes strong {
+  color: #023e8a;
+}
+
+.praia-detalhes h3 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #03045e;
+  border-left: 4px solid #0077b6;
+  padding-left: 0.5rem;
+}
+
+.botoes-extra {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-link {
+  background: #0077b6;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-link:hover {
+  background: #005f8e;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+.colunas-detalhes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.coluna-esquerda, .coluna-direita {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+@media (max-width: 768px) {
+  .colunas-detalhes {
+    grid-template-columns: 1fr;
+  }
+}
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --card: #f9f9f9;
+  --accent: #0077b6;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.praia-detalhes,
+.coluna-esquerda,
+.coluna-direita {
+  background: var(--card);
+  transition: background 0.3s ease;
+}
+
+.dark {
+  --bg: #121212;
+  --text: #e0e0e0;
+  --card: #1e1e1e;
+  --accent: #90e0ef;
+}
+
+.btn-link {
+  background: var(--accent);
+  color: white;
+}
+>>>>>>> Stashed changes

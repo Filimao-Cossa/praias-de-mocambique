@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
@@ -63,4 +64,71 @@
     <priority>0.8</priority>
   </url>
 
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/index.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/praias/ponta-do-ouro.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/praias/praia-do-tofo.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/praias/praia-do-wimbe.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/praias/praia-de-zalala.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/praias/praia-do-bilene.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/praias/praia-de-macaneta.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/praias/praia-da-barra.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/praias/ilha-da-inhaca.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/praias/praia-de-xai-xai.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/praias/praia-de-chocas-mar.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://localhost/website/praias-de-mocambique/praias/praia-de-santa-maria.html</loc>
+    <lastmod>2025-10-14</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+>>>>>>> Stashed changes
 </urlset>
