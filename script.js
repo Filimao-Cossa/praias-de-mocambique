@@ -119,4 +119,15 @@ function toggleFavorito(id) {
       });
     })
     .catch(err => console.error("Erro ao carregar praias:", err));
+});document.addEventListener('DOMContentLoaded', () => {
+  const select = document.getElementById('filtro-provincia');
+  gerarCardsPorProvincia(select.value);
+
+  select.addEventListener('change', () => {
+    gerarCardsPorProvincia(select.value);
+  });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  gerarPraiasSelecionadas();
+});
+

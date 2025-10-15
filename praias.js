@@ -1,3 +1,58 @@
+const container = document.getElementById('praias-selecionadas');
+
+function normalizar(texto) {
+  return texto.toLowerCase().replace(/\s+/g, '-');
+}
+
+function gerarPraiasSelecionadas() {
+  const provinciasAlvo = ["maputo", "gaza", "inhambane", "zambezia", "nampula", "cabo delgado"];
+  const agrupadas = {};
+
+  PRAIAS.forEach(praia => {
+    const prov = normalizar(praia.provincia);
+    if (provinciasAlvo.includes(prov)) {
+      if (!agrupadas[prov]) agrupadas[prov] = [];
+      agrupadas[prov].push(praia);
+    }
+  });
+
+  let html = '';
+  for (const prov in agrupadas) {
+    html += `<h4 class="text-uppercase text-info mt-4">${prov.replace('-', ' ')}</h4><div class="row">`;
+    agrupadas[prov].forEach(praia => {
+      html += `
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm bg-dark text-white">
+            <img src="${praia.imagem}" class="card-img-top" alt="${praia.nome}" onerror="this.src='images/fallback.jpeg'">
+            <div class="card-body">
+              <h5 class="card-title">${praia.nome}</h5>
+              <p class="card-text">${praia.descricao}</p>
+              <p><strong>Atividades:</strong> ${Array.isArray(praia.atividades) ? praia.atividades.join(', ') : praia.atividades}</p>
+              <p><strong>Infraestrutura:</strong> ${praia.infraestrutura}</p>
+              <a href="${praia.mapa}" target="_blank" class="btn btn-outline-light btn-sm">Ver no mapa</a>
+              ${praia.link ? `<a href="${praia.link}" target="_blank" class="btn btn-sm btn-info ms-2">Mais detalhes</a>` : ''}
+            </div>
+          </div>
+        </div>
+      `;
+    });
+    html += '</div>';
+  }
+
+  container.innerHTML = html;
+}
+
+document.addEventListener('DOMContentLoaded', gerarPraiasSelecionadas);
+
+if (filtradas.length === 0) {
+  container.innerHTML = `
+    <div class="alert alert-warning text-center">
+      Nenhuma praia cadastrada para esta província no momento.
+    </div>
+  `;
+  return;
+}
+
 const PRAIAS = [
   {
     id: "p1",
@@ -72,7 +127,7 @@ const PRAIAS = [
   {
     id: "p6",
     nome: "Praia de Pemba",
-    imagem: "img/pemba.jpg",
+    imagem: "img/praia-de-pemba.jpg",
     provincia: "cabo-delgado",
     descricao: "Praia urbana com cultura local vibrante e artesanato.",
     epoca: "Outubro a Março",
@@ -187,6 +242,79 @@ const PRAIAS = [
   "fonte": "https://beachsearcher.com/pt/beach/508201026/praia-do-wimbe",
   "mapa": "https://maps.google.com/?q=Praia+do+Wimbe",
   "compartilhar": "https://wa.me/?text=Veja+esta+praia:+Praia+do+Wimbe"
-}
-
+},
+ // Exemplo de entrada para novas praias
+  {
+    id: "p13",
+    nome: "Praia de Barra",
+    imagem: "img/barra.jpg",
+    provincia: "inhambane",
+    descricao: "Praia com águas rasas e recifes, ideal para famílias.",
+    atividades: "Mergulho, Passeios de barco, Relaxamento",
+    infraestrutura: "Resorts, Restaurantes, Escolas de mergulho",
+    mapa: "https://maps.google.com/?q=Praia+de+Barra"
+  },
+  {
+    id: "p14",
+    nome: "Praia de Bazaruto",
+    imagem: "img/bazaruto.jpg",
+    provincia: "inhambane",
+    descricao: "Arquipélago paradisíaco com dunas e águas cristalinas.",
+    atividades: "Snorkeling, Observação marinha, Passeios de barco",
+    infraestrutura: "Lodges de luxo, Guias locais",
+    mapa: "https://maps.google.com/?q=Praia+de+Bazaruto"
+  },
+  {
+    id: "p15",
+    nome: "Praia de Inhaca",
+    imagem: "img/inhaca.jpg",
+    provincia: "maputo",
+    descricao: "Ilha com biodiversidade marinha e praias tranquilas.",
+    atividades: "Snorkeling, Observação de corais, Relaxamento",
+    infraestrutura: "Lodges ecológicos, Guias locais",
+    mapa: "https://maps.google.com/?q=Praia+de+Inhaca"
+  },
+  {
+    id: "p16",
+    nome: "Praia de Jangamo",
+    imagem: "img/jangamo.jpg",
+    provincia: "inhambane",
+    descricao: "Praia selvagem com ondas fortes e paisagem natural.",
+    atividades: "Surf, Camping, Fotografia",
+    infraestrutura: "Eco-lodges, Trilhas",
+    mapa: "https://maps.google.com/?q=Praia+de+Jangamo"
+  },
+  {
+    id: "p17",
+    nome: "Praia de Malongane",
+    imagem: "img/malongane.jpg",
+    provincia: "maputo",
+    descricao: "Praia isolada com dunas e vegetação costeira.",
+    atividades: "Camping, Mergulho, Caminhadas",
+    infraestrutura: "Lodges, Trilhas",
+    mapa: "https://maps.google.com/?q=Praia+de+Malongane"
+  },
+  {
+    id: "p18",
+    nome: "Praia de Pomene",
+    imagem: "img/pomene.jpg",
+    provincia: "inhambane",
+    descricao: "Praia remota com manguezais e biodiversidade.",
+    atividades: "Observação da natureza, Passeios de barco",
+    infraestrutura: "Eco-resorts, Guias locais",
+    mapa: "https://maps.google.com/?q=Praia+de+Pomene"
+  },
+  {
+    id: "p19",
+    nome: "Praia de Vamizi",
+    imagem: "img/vamizi.jpeg",
+    provincia: "cabo-delgado",
+    descricao: "Ilha exclusiva com recifes e águas azul-turquesa.",
+    atividades: "Mergulho, Relaxamento, Fotografia",
+    infraestrutura: "Resorts de luxo, Transporte marítimo",
+    mapa: "https://maps.google.com/?q=Praia+de+Vamizi"
+  },
+  {
+   
+  }
 ];
