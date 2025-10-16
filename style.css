@@ -427,3 +427,23 @@ body {
   background: var(--accent);
   color: white;
 }
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+form {
+  max-width: 400px;
+  margin: auto;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+body.dark-mode form {
+  background: #1e1e1e;
+  color: #f0f0f0;
+}
