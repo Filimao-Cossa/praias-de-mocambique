@@ -14,7 +14,7 @@
     }
 
     .hero {
-      background-image: url('praias-mocambique.jpeg'); /* Substitua com o caminho real da imagem */
+      background-image: url('praias-mocambique.jpeg'); /* imagem sem texto */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -40,13 +40,13 @@
     }
 
     .hero h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: bold;
       text-shadow: 2px 2px 5px #000;
     }
 
     .hero p {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin-bottom: 30px;
       text-shadow: 1px 1px 3px #000;
     }
@@ -59,6 +59,7 @@
       border: 2px solid white;
       color: white;
       transition: 0.3s ease;
+      text-decoration: none;
     }
 
     .btn-hero:hover {
@@ -74,7 +75,7 @@
     <div class="hero-content">
       <h1>Bem-vindo às Praias de Moçambique</h1>
       <p>Explore os destinos mais paradisíacos da costa africana</p>
-      <a href="index.html" class="btn btn-hero">Acessar</a>
+      <a href="index.html" class="btn-hero">Acessar Página Inicial</a>
     </div>
   </div>
 
